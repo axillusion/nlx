@@ -65,7 +65,7 @@
         <navbar>
             <ul class="navbar">
                 <li class="navbarlist"><img class="picture"src="nlx.png"></li>
-                <li class="navbarlist1"><a class="text" href="loginpage.html">Logout</a></li>
+                <li class="navbarlist1"><a class="text" href="loginpage.html">Login or Logout</a></li>
                 <li class="navbarlist1"><a class="text" href="my-cart.html">Cart</a></li>
                 <li class="navbarlist1"><a class="text" href="myaccountpage.html">My Account</a></li>
             </ul>
@@ -75,7 +75,16 @@
 
 <body>
     <div>
-        <input type="text" placeholder="Search available products.." style="margin: 5%; margin-left: 15%;">
+        <input type="text" placeholder="Search available products.." style="width: 50%;margin: 5%; margin-left: 15%;">
+        <label class="first">Filters: </label>
+        <select name="language">
+            <option value="Books">Books</option>
+            <option value="Movies">Movies</option>
+            <option value="Groceries">Groceries</option>
+            <option value="Alcohol">Alcohol</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+        </select>
     </div>
 
     <div class="container">
