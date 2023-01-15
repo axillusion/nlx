@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            width:100%;
+            height:10%;
+            background-color: darkcyan;
+            border-radius:0px 0px 10px 10px;
+            border-style:solid;
+            border-color:black;
+        }
+        .navbar {
+            margin: 0px 10px 5px 10px;
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .navbarlist1 {
+            list-style: none;
+            margin-left: 2rem;
+            padding: 8px;
+
+        }
+        .text {
+            color:black;
+            text-align:center;
+            font-size:larger;
+            text-decoration:none;
+        }
+        .navbarlist:first-child {
+            padding: 0;
+            margin-left: 0;
+            margin-right: auto;
+        }
+        .navbarlist1:hover{
+            background-color: darkred;
+            transition: 0.2s;
+        } 
+        .picture {
+            aspect-ratio: 1 / 1;
+            width: 25%;
+        }
+        .container {
+            height: 80%;
+            width: 70%;
+            background-color: lightblue;
+            border-radius: 10px;
+            border-style: solid;
+            border-color:black;
+            position:absolute;
+            left:15%;
+            right:2%;
+            padding:1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <navbar>
+            <ul class="navbar">
+                <li class="navbarlist"><img class="picture"src="nlx.png"></li>
+                <li class="navbarlist1"><a class="text" href="loginpage.html">Logout</a></li>
+                <li class="navbarlist1"><a class="text" href="mainpage.html">Store</a></li>
+                <li class="navbarlist1"><a class="text" href="mycartpage.html">Cart</a></li>
+            </ul>
+        </navbar>
+    </div>
+</body>
+
+<body>
+    <div>
+        <input type="text" placeholder="Search available products.." style="margin: 5%; margin-left: 15%;">
+    </div>
+
+    <div class="container">
+
+    </div>
+</body>
+</html>
