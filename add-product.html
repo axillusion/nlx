@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            .rectangle {
+                height: 80%;
+                width: 70%;
+                background-color:lightblue;
+                border-radius:10px;
+                border-style:solid;
+                border-color:black;
+                position:absolute;
+                top:10%;
+                left:15%;
+                padding:5px;
+            }
+            .first {
+                margin-left:5%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="rectangle">
+            <h2 style="text-align:center;">Add your product</h2>
+            <br>
+            <img src="avatar.jpg", width="35%", height="40%", style="display:block;margin-left:auto;margin-right:auto;">
+            <br>
+            <form class="containers" action="myaccountpage.html">
+                <label class="first">Product name:</label>
+                <input type="text" name="productname" style="margin-left:4.5%">
+                <label class="first">Price:</label>
+                <input type="text" name="price">
+                <br><br>
+                <label style="margin-left:6%">Category: </label>
+                <input type="text" name="category">
+                <label style="margin-left:5%">Quantity: </label>
+                <input type="number" name="quantity">
+                <br><br>
+                <label class="first">Description:</label>
+                <textarea rows="3" cols="50"></textarea>
+                <input type="submit" value="Add Product" style="margin-left:25%">
+            </form>
+        </div>
+    </body>
+</html>
