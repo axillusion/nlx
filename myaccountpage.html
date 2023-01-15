@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .header {
+                width:100%;
+                height:10%;
+                background-color: darkcyan;
+                border-radius:0px 0px 10px 10px;
+                border-style:solid;
+                border-color:black;
+            }
+            .navbar {
+                margin: 0px 10px 5px 10px;
+                padding: 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            .navbarlist1 {
+                list-style: none;
+                margin-left: 2rem;
+                padding: 8px;
+
+            }
+            .text {
+                color:black;
+                text-align:center;
+                font-size:larger;
+                text-decoration:none;
+            }
+            .navbarlist:first-child {
+                padding: 0;
+                margin-left: 0;
+                margin-right: auto;
+            }
+            .navbarlist1:hover{
+                background-color: darkred;
+                transition: 0.2s;
+            } 
+            .picture {
+                aspect-ratio: 1 / 1;
+                width: 30%;
+            }
+            .container {
+                height: 80%;
+                width: 70%;
+                background-color: lightblue;
+                border-radius: 10px;
+                border-style: solid;
+                border-color:black;
+                position:absolute;
+                left:15%;
+                right:2%;
+                padding:1rem;
+            }
+            .avatar {
+                aspect-ratio: 1/1;
+                width:125px;
+            }
+            p {
+                padding:1rem;
+                left:5%;
+            }
+            .description {
+                position:relative;
+                text-align:center;
+                font-size:larger;
+            }
+            .userdata {
+                font-size:larger;
+                list-style: none;
+                margin-left: 1rem;
+            }
+            .userdata1 {
+                padding:5px;
+            }
+            .aboutbox {
+                height:20%;
+                width:30%;
+                background-color: white;
+                border-style:solid;
+                border-radius:10px;
+                border-color:black;
+                position:absolute;
+                margin-left:60%;
+                margin-right:auto;
+                overflow: hidden;
+            }
+            .textbox {
+                overflow:hidden;
+                word-wrap:break-word;
+                padding: 5px 5px 5px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <navbar>
+                <ul class="navbar">
+                    <li class="navbarlist"><img class="picture"src="nlx.png"></li>
+                    <li class="navbarlist1"><a class="text" href="loginpage.html">Logout</a></li>
+                    <li class="navbarlist1"><a class="text" href="home-page.html">Store</a></li>
+                    <li class="navbarlist1"><a class="text" href="my-cart.html">Cart</a></li>
+                </ul>
+            </navbar>
+        </div>
+        <div class="container">
+            <center><h2 style="font-family: Calibri">My profile</h2></center>
+            <br>
+            <center><img src="avatar.jpg" class="avatar"></center>
+            <br>
+            <center><p>User name: #1</p></center>
+            <br>
+            <div class="aboutbox">
+                <p class="textbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe consequuntur corrupti inventore! Nemo ipsa perspiciatis, et hic incidunt facilis dicta magni officia quod natus. Rerum, asperiores? Aspernatur veniam hic omnis?</p>
+            </div>
+            <p class="description">About: </p>
+            <ul class="userdata">
+                <li class="userdata1">Email: example@mail.com</li>
+                <li class="userdata1">Address: example</li>
+                <li class="userdata1">Zipcode: example</li>
+                <li class="userdata1">Sex: example</li>
+                <li class="userdata1">Language: English</li>
+            </ul>
+            <br><br>
+            <a href="changedetails.html" style="margin-left:10%;"><button>Change details</button></a>
+            <a href="resetpassword.html" style="margin-left:50%;"><button>Change password</button></a>
+        </div>
+    </body>
+</html>

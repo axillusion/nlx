@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <style>
+            .rectangle {
+                height: 80%;
+                width: 70%;
+                background-color:lightblue;
+                border-radius:10px;
+                border-style:solid;
+                border-color:black;
+                position:absolute;
+                top:10%;
+                left:15%;
+                padding:5px;
+            }
+            .first {
+                margin-left:5%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="rectangle">
+            <h2 style="text-align:center;">Change your details</h2>
+            <br>
+            <img src="nlx.png", width="35%", height="40%", style="display:block;margin-left:auto;margin-right:auto;">
+            <br>
+            <form action="myaccountpage.html">
+                <label class="first">User name:</label>
+                <input type="text" name="username" class="first" value="example">
+                <label style="margin-left:6%">First name: </label>
+                <input type="text" name="firstname" value="example">
+                <label style="margin-left:1%">Last name: </label>
+                <input type="text" name="lastname" value="example">
+                <br><br>
+                <label class="first">Address:</label>
+                <input type="text" name="address" style="width:40%;" value="example">
+                <br><br>
+                <label class="first">Zip Code: </label>
+                <input type="text" name="zipcode" value="example">
+                <label style="margin-left:5%">City: </label>
+                <input type="text" name="city" value="example">
+                <br><br>
+                <label class="first">Email: </label>
+                <input type="text" name="email" style="width:22%" value="example@mail.com">
+                <label style="margin-left:7%">Sex: </label>
+                <select name="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="neither">I'd rather not say</option>
+                </select>
+                <br><br>
+                <label class="first">Language: </label>
+                <select name="language">
+                    <option value="Dutch">Dutch</option>
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Romanian">Romanian</option>
+                    <option value="Chinese">Chinese</option>
+                </select>
+                <br><br>
+                <label class="first">About:</label>
+                <textarea rows="3" cols="50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil a quae quaerat, corrupti explicabo veniam voluptatum aperiam ipsam dolor. Quidem cum corporis molestiae dolor iste ipsum at voluptates vero consectetur!</textarea>
+                <input type="submit" value="Change details" style="margin-left:25%">
+            </form>
+        </div>
+    </body>
+</html>
