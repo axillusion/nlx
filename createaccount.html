@@ -1,60 +1,60 @@
 <html>
     <head>
         <style>
+            * {
+                margin-left:2%;
+            }
             .rectangle {
-                height: 80%;
-                width: 70%;
+                height: 85%;
+                width: 80%;
                 background-color:lightblue;
                 border-radius:10px;
                 border-style:solid;
                 border-color:black;
                 position:absolute;
-                top:10%;
-                left:15%;
+                top:7.5%;
+                left:7.5%;
                 padding:5px;
             }
             .first {
                 margin-left:5%;
+            }
+            input {
+                border-radius:10px;
+                border-style:solid;
+                border-color:black;
+                height:4%;
+                width:25%;
             }
         </style>
     </head>
     <body>
         <div class="rectangle">
             <h2 style="text-align:center;">Create your account</h2>
+            <img src="nlx.png", width="25%", height="30%", style="display:block;margin-left:auto;margin-right:auto;">
             <br>
-            <img src="nlx.png", width="35%", height="40%", style="display:block;margin-left:auto;margin-right:auto;">
-            <br>
-            <form class="containers" action="loginpage.html">
-                <label class="first">User name:</label>
-                <input type="text" name="username" style="margin-left:4.5%">
-                <label style="margin-left:6%">First name: </label>
-                <input type="text" name="firstname">
-                <label style="margin-left:1%">Last name: </label>
-                <input type="text" name="lastname">
+            <script src="validate.js" defer></script>
+            <form class="containers" id="registerForm" action = "index.html" onsubmit="return checkForm()">
+                <input type="text" name="username" id="userID" class="first" placeholder="UserID">
+                <input type="text" name="firstname" id="first" placeholder="*First name">
+                <input type="text" name="lastname" id="last" placeholder="*Last name">
                 <br><br>
-                <label class="first">Password: </label>
-                <input type="password" name="password" style="margin-left:5%">
-                <label style="margin-left:6%">Address: &nbsp;&nbsp;</label>
-                <input type="text" name="address" style="width:39%;">
+                <input type="text" name="password" id="pass" class="first" placeholder="Password">
+                <input type="text" name="address" id="address" style="width:40%;" placeholder="Address">
                 <br><br>
-                <label class="first">Confirm Password:</label>
-                <input type="password" name="confirm">
-                <label style="margin-left:6%">Zip Code: </label>
-                <input type="text" name="zipcode">
-                <label style="margin-left:5%">City: </label>
-                <input type="text" name="city">
+                <input type="text" name="confirm" id="passconf" class="first" placeholder="Confirm password">
+                <input type="text" name="zipcode" id="zip" placeholder="*Zip Code">
+                <input type="text" name="country" id="country" placeholder="*Country">
                 <br><br>
-                <label class="first">Email: </label>
-                <input type="text" name="email" style="width:22%">
-                <label style="margin-left:7%">Sex: </label>
-                <select name="sex">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="neither">I'd rather not say</option>
+                <input type="text" name="email" id="email" style="width:25%" placeholder="*Email" class="first">
+                <select name="sex" id="sex">
+                    <option value="" disabled selected hidden>Choose your sex</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">I'd rather not say</option>
                 </select>
-                <br><br>
-                <label class="first">Language: </label>
-                <select name="language">
+                <select name="language" id="language" class="first">
+                    <option value="" disabled selected hidden>Choose your language</option>
                     <option value="Dutch">Dutch</option>
                     <option value="English">English</option>
                     <option value="Spanish">Spanish</option>
@@ -63,10 +63,14 @@
                     <option value="Chinese">Chinese</option>
                 </select>
                 <br><br>
-                <label class="first">About:</label>
-                <textarea rows="3" cols="50"></textarea>
+                <textarea rows="3" cols="50" placeholder="About" class="first" form="registerForm" name="about" id="textbox"></textarea>
                 <input type="submit" value="Create account" style="margin-left:25%">
             </form>
+            <ul style="list-style:none;">
+                <li>All fields marked with * are mandatory.</li>
+                <li>UserID must be of length between 5-12 characters, must start with a capital letter and end in a number or a special character.</li>
+                <li>Password must contain at least 12 characters, and contain uppercase and lowercase letters, numbers and symbols.</li>
+            </ul>
         </div>
     </body>
 </html>
