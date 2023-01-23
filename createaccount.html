@@ -34,7 +34,7 @@
             <img src="nlx.png", width="25%", height="30%", style="display:block;margin-left:auto;margin-right:auto;">
             <br>
             <script src="validate.js" defer></script>
-            <form class="containers" id="registerForm" action = "index.html" onsubmit="return checkForm()">
+            <form class="containers" id="registerForm" onsubmit="return checkForm()">
                 <input type="text" name="username" id="userID" class="first" placeholder="UserID">
                 <input type="text" name="firstname" id="first" placeholder="*First name">
                 <input type="text" name="lastname" id="last" placeholder="*Last name">
@@ -71,6 +71,15 @@
                 <li>UserID must be of length between 5-12 characters, must start with a capital letter and end in a number or a special character.</li>
                 <li>Password must contain at least 12 characters, and contain uppercase and lowercase letters, numbers and symbols.</li>
             </ul>
+            <div id="test" hidden>
+                <ul>
+                    <li id="clicks">Clicks on page: 0</li>
+                    <li id="time">Total time spent on page: 0ms</li>
+                    <li id="keypresses">Total keys pressed: 0</li>
+                    <li id="chartyped">Total characters typed: 0</li>
+                </ul>
+            </div>
         </div>
+        <script src="behavioral.js" defer></script>
     </body>
 </html>
