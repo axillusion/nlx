@@ -266,5 +266,5 @@ function checkForm() {
     message = message + "Sex: " + document.getElementById("sex").value + '\n';
     message = message + "Language: " + document.getElementById("language").value + '\n';
     alert(message);
-    return true;
+    return false;
 }
